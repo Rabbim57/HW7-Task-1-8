@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 public class Main {
     public static void main(String[] args) {
         int salary = 15000;
@@ -52,20 +54,31 @@ public class Main {
             System.out.println("Месяц " + monthXVasily + ", сумма накоплений равна " + totalBankVasily + " рублей");
         }
 
-        for (int day = 5; day <= 31; day ++ ){
-            if (day % 7 ==0){
-                System.out.println("Сегодня пятница," + day + "е число. Необходимо сделать отчет");
+        for (int friday = 5; friday <= 31; friday +=7 ) {
+                System.out.println("Сегодня пятница," + friday + "е число. Необходимо сделать отчет");
+            }
+
+        System.out.println();
+
+        // Task 8
+        System.out.println("Task 8");
+        System.out.println();
+
+        int currentYear = LocalDate.now().getYear();
+        int startYear = currentYear - 208;
+        int endYear = currentYear + 100;
+
+        for (int i = 0; i <= endYear ; i+=79) {
+            if (i >= startYear) {
+                System.out.println( i );
             }
         }
 
-
-
-
-
+        }
     }
 
 
 
 
 
-    }
+
