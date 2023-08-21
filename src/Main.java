@@ -51,16 +51,14 @@ public class Main {
             if (monthXVasily % 6 == 0) ;
             System.out.println("Месяц " + monthXVasily + ", сумма накоплений равна " + totalBankVasily + " рублей");
         }
-        int mothNumber = 5;
-        switch (mothNumber) {
-            case 5:
-            case 12:
-            case 19:
-            case 27:
-                System.out.println("Сегодня пятница," + mothNumber + "-е число. Нобходимо подготовить отчет.");
-                break;
+
+        for (int day = 5; day <= 31; day ++ ){
+            if (day % 7 ==0){
+                System.out.println("Сегодня пятница," + day + "е число. Необходимо сделать отчет");
+            }
         }
-        }
+
+
 
 
 
